@@ -5,3 +5,6 @@ When the optional steps field is not completed, the shortest path will be return
 This uses a BFS for the shortest path, and a DFS for the path given steps.
 
 To ensure speed of this process with large dictionary inputs, an adjacency list is created and nodes used (Thanks @Ruairi) minimizing the amount of time spent iteratiing through each chain.
+
+In the future I would use a Map<D, List<D>> for adjacency lists, instead of List<List<D>>
+It means a better constant time access and you don't have remember indices, only having to remember the values.
